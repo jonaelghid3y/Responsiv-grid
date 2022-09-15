@@ -1,0 +1,61 @@
+/** Not allowed to change this initial CSS code **/
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+/*************************************************/
+
+#container{
+display: grid;
+width: 90%;
+margin: 0 auto;
+grid-gap: 10px;
+grid-template-rows: 10px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+	"header header header header"
+	"box1 box2 box2 box3 "
+	"main main main aside"
+	"footer footer footer footer";
+
+}
+header{
+	grid-area: header;
+}
+main{
+	grid-area: main;
+
+}
+aside{
+	grid-area: aside;
+}
+footer{
+	grid-area: footer;
+
+}
+#box1{
+	grid-area: box1;
+
+}
+#box2{
+	grid-area: box2;
+}
+#box3{
+	grid-area: box3;
+}
+
+header,aside,main,footer,#box1,#box2,#box3 {
+
+	border: 1px solid black;
+	min-height: 100px;
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+}
