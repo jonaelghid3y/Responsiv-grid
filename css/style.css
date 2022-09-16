@@ -5,50 +5,75 @@ body {
 }
 /*************************************************/
 
-#container{
+.container1{
 display: grid;
-width: 90%;
+width: 89%;
 margin: 0 auto;
-grid-gap: 10px;
-grid-template-rows: 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-areas: 
-	"header header header header"
-	"box1 box2 box2 box3 "
-	"main main main aside"
-	"footer footer footer footer";
+height: 500px;
+column-gap: 2%;
+row-gap: 30px;
+grid-template-rows: 100px;
+min-height: 100px;
+grid-template-columns: repeat(6, 1fr);
+	grid-template-areas: 
+	 	"header header  header header header header"
+		"box1 box2 box2 box2 box2 box3"
+
 
 }
+.container2{
+	display: grid;
+	width: 89%;
+	margin: 0 auto;
+	height: 500px;
+	column-gap: 2%;
+	row-gap: 30px;
+	grid-template-rows: 100px;
+	min-height: 100px;
+	grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 
+		"main main main sidebar"
+		"footer1 footer2 footer3 footer4"
+}
+
 header{
-	grid-area: header;
-}
-main{
-	grid-area: main;
-
-}
-aside{
-	grid-area: aside;
-}
-footer{
-	grid-area: footer;
-
+		grid-area: header;
 }
 #box1{
 	grid-area: box1;
 
 }
-#box2{
+#box2
+{
 	grid-area: box2;
 }
 #box3{
 	grid-area: box3;
 }
+main{
+	grid-area: main
+}
+aside{
+	grid-area: sidebar;
 
-header,aside,main,footer,#box1,#box2,#box3 {
+}
+#footer1{
+	grid-area: footer1;
+}
+#footer2{
+	grid-area: footer2;
+}
+#footer3{
+	grid-area: footer3;
+}
+#footer4{
+	grid-area: footer4;
+}
+
+header,aside,main,footer,#box1,#box2,#box3,#footer1, #footer2, #footer3 , #footer4 {
 
 	border: 1px solid black;
 	min-height: 100px;
-	
 	
 	
 	
